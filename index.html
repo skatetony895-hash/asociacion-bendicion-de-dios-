@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Asociación Bendición de Dios: dona, recicla y ayuda a crear esperanza para muchas familias.">
+  <title>Asociación Bendición de Dios</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #24332b;
+      line-height: 1.6;
+      background: #f7faf7;
+    }
+    header {
+      background: #125c40;
+      color: white;
+      padding: 22px 16px;
+      text-align: center;
+    }
+    .logo {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      background: white;
+      border-radius: 50%;
+      padding: 5px;
+    }
+    nav { margin-top: 12px; }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 65px 20px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #176747, #75a85b);
+    }
+    .hero h1 { font-size: 36px; line-height: 1.2; }
+    .hero p { font-size: 19px; }
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      margin: 8px;
+      background: #f6c453;
+      color: #26382d;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    section {
+      max-width: 950px;
+      margin: auto;
+      padding: 35px 20px;
+    }
+    h2 { color: #176747; text-align: center; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: white;
+      padding: 20px 12px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 3px 12px #00000010;
+    }
+    .icon { font-size: 32px; }
+    .help {
+      background: #e5f1e6;
+      border-radius: 14px;
+      text-align: center;
+      padding: 25px;
+    }
+    footer {
+      background: #123f30;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 29px; }
+      nav a { display: inline-block; margin: 5px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo"
+      src="logo.png"
+      alt="Logo de Asociación Bendición de Dios"
+      onerror="this.style.display='none'">
+    <h2 style="color:white;margin:8px 0">Asociación Bendición de Dios</h2>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#donaciones">Donaciones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="inicio">
+    <h1>Dona y crea esperanza</h1>
+    <p>No botes las cosas que ya no usas.<br>
+    Dona y crea esperanza a muchas familias.</p>
+    <a class="btn" href="#donaciones">¿Qué puedes donar?</a>
+    <a class="btn" href="https://wa.me/51993440618">Contáctanos</a>
+  </div>
+
+  <section id="nosotros">
+    <h2>Juntos podemos ayudar</h2>
+    <p style="text-align:center">
+      En Asociación Bendición de Dios promovemos la solidaridad,
+      la reutilización y el reciclaje. Tus donaciones pueden dar
+      una nueva oportunidad a objetos útiles y ayudar a muchas familias.
+    </p>
+  </section>
+
+  <section id="donaciones">
+    <h2>Recibimos donaciones de:</h2>
+    <div class="cards">
+      <div class="card"><div class="icon">🪑</div>Muebles</div>
+      <div class="card"><div class="icon">👕</div>Ropa</div>
+      <div class="card"><div class="icon">👟</div>Zapatos</div>
+      <div class="card"><div class="icon">🧸</div>Juguetes</div>
+      <div class="card"><div class="icon">♻️</div>Botellas</div>
+      <div class="card"><div class="icon">📄</div>Papeles</div>
+      <div class="card"><div class="icon">📚</div>Libros</div>
+      <div class="card"><div class="icon">📦</div>Cartón</div>
+      <div class="card"><div class="icon">📰</div>Periódicos</div>
+      <div class="card"><div class="icon">🔌</div>Artefactos</div>
+      <div class="card"><div class="icon">🗞️</div>Revistas</div>
+      <div class="card"><div class="icon">⚙️</div>Maquinaria</div>
+      <div class="card"><div class="icon">🔩</div>Chatarra</div>
+      <div class="card"><div class="icon">🚗</div>Vehículos</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="help">
+      <h2>Tu donación transforma vidas</h2>
+      <p>Lo que ya no necesitas puede convertirse en una nueva oportunidad para alguien más.</p>
+      <a class="btn" href="https://wa.me/51993440618">
+        Coordinar una donación por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p style="text-align:center">
+      Asociación Bendición de Dios<br>
+      Teléfono: 993 440 618
+    </p>
+    <p style="text-align:center">
+      <a class="btn" href="https://wa.me/51993440618">Escríbenos por WhatsApp</a>
+    </p>
+  </section>
+
+  <footer>
+    <strong>Asociación Bendición de Dios</strong>
+    <p>Compartiendo solidaridad y creando esperanza.</p>
+  </footer>
+</body>
+</html>
