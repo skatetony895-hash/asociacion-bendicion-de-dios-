@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="M5UsLs5TuVeKkJh2v841rn1qYnolm9l9yJM6SJoCq8I" />
+  <meta name="description" content="Asociación Bendición de Dios: apoyo educativo y acompañamiento integral para niños y adolescentes de familias en situación de vulnerabilidad. Conoce el proyecto Saber y Creer y cómo colaborar.">
+  <meta name="theme-color" content="#123b82">
+  <title>Asociación Bendición de Dios | Educación, esperanza y solidaridad</title>
+  <style>
+    :root {
+      --blue: #123b82;
+      --blue-dark: #092754;
+      --blue-light: #edf4ff;
+      --gold: #f5c928;
+      --gold-dark: #d6a900;
+      --ink: #1d2b42;
+      --muted: #5c6879;
+      --white: #ffffff;
+      --surface: #f6f8fc;
+      --border: #e1e8f2;
+      --shadow: 0 14px 38px rgba(9, 39, 84, .11);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    .container { width: min(1120px, calc(100% - 36px)); margin: 0 auto; }
+    .topbar { background: var(--blue-dark); color: #fff; font-size: .92rem; }
+    .topbar-inner { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; flex-wrap: wrap; }
+    header { background: rgba(255,255,255,.97); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 20; }
+    .nav { min-height: 86px; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
+    .brand { display: flex; align-items: center; gap: 13px; text-decoration: none; min-width: 0; }
+    .brand img { width: 67px; height: 67px; object-fit: contain; border-radius: 50%; }
+    .brand-text strong { display: block; color: var(--blue-dark); font-size: 1.05rem; line-height: 1.25; }
+    .brand-text span { color: var(--muted); font-size: .8rem; }
+    nav { display: flex; align-items: center; gap: 20px; }
+    nav a { text-decoration: none; font-weight: 700; font-size: .92rem; }
+    nav a:hover { color: var(--blue); }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 13px 20px; border-radius: 999px; font-weight: 700; text-decoration: none; border: 2px solid transparent; transition: transform .2s, background .2s; }
+    .button:hover { transform: translateY(-2px); }
+    .button-primary { background: var(--gold); color: #17223a; box-shadow: 0 8px 18px rgba(214,169,0,.2); }
+    .button-blue { background: var(--blue); color: white; }
+    .button-outline { border-color: rgba(255,255,255,.7); color: white; }
+    .hero { background: linear-gradient(120deg, rgba(7,32,72,.94), rgba(18,59,130,.82)), radial-gradient(circle at 85% 20%, #f5c928 0, transparent 30%); color: white; padding: 78px 0 82px; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; gap: 48px; }
+    .eyebrow { display: inline-block; padding: 6px 12px; border-radius: 999px; background: rgba(245,201,40,.16); color: #ffe27a; border: 1px solid rgba(245,201,40,.55); font-size: .83rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+    h1 { font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.08; letter-spacing: -.035em; margin: 18px 0; }
+    .hero p { max-width: 650px; font-size: 1.12rem; color: #e9f0ff; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+    .hero-logo-wrap { display: flex; justify-content: center; }
+    .hero-logo { width: min(100%, 370px); aspect-ratio: 1; object-fit: contain; background: white; border: 8px solid rgba(245,201,40,.9); border-radius: 50%; box-shadow: 0 25px 70px rgba(0,0,0,.28); }
+    .trust-strip { background: var(--blue-light); border-bottom: 1px solid var(--border); }
+    .trust-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 23px 0; }
+    .trust-item { text-align: center; color: var(--blue-dark); font-weight: 700; }
+    .trust-item span { display: block; color: var(--muted); font-weight: 400; font-size: .9rem; }
+    section { padding: 76px 0; }
+    .section-heading { max-width: 760px; margin: 0 auto 38px; text-align: center; }
+    .kicker { color: var(--blue); font-size: .82rem; text-transform: uppercase; letter-spacing: .12em; font-weight: 800; }
+    h2 { color: var(--blue-dark); font-size: clamp(1.8rem, 3vw, 2.65rem); line-height: 1.18; margin: 10px 0 14px; }
+    .section-heading p, .muted { color: var(--muted); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 42px; align-items: start; }
+    .note-card { background: var(--surface); border: 1px solid var(--border); border-radius: 22px; padding: 27px; }
+    .note-card h3 { margin-top: 0; color: var(--blue-dark); }
+    .pill-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .pill { background: var(--blue-light); color: var(--blue-dark); padding: 8px 12px; border-radius: 999px; font-size: .9rem; font-weight: 700; }
+    .program { background: var(--surface); }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card { background: white; border: 1px solid var(--border); border-radius: 20px; padding: 25px; box-shadow: 0 6px 22px rgba(9,39,84,.04); }
+    .card-icon { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 14px; background: var(--blue-light); color: var(--blue); font-size: 1.5rem; }
+    .card h3 { color: var(--blue-dark); margin: 15px 0 8px; }
+    .card p { margin-bottom: 0; color: var(--muted); }
+    .quote { background: linear-gradient(120deg, var(--blue-dark), var(--blue)); color: white; border-radius: 24px; padding: 34px; }
+    .quote p { font-size: 1.15rem; margin-top: 0; }
+    .quote strong { color: #ffe27a; }
+    .donate { background: linear-gradient(120deg, #fff9df, #fff); }
+    .donate-box { display: grid; grid-template-columns: 1fr auto; gap: 30px; align-items: center; background: white; border: 1px solid #f0df98; border-radius: 24px; padding: 34px; box-shadow: var(--shadow); }
+    .donate-box h2 { margin-top: 0; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .contact-item { display: flex; gap: 15px; padding: 19px 0; border-bottom: 1px solid var(--border); }
+    .contact-item:last-child { border-bottom: 0; }
+    .contact-symbol { flex: 0 0 44px; height: 44px; display: grid; place-items: center; background: var(--blue-light); border-radius: 13px; font-size: 1.25rem; }
+    footer { background: #071b39; color: #dce7fb; padding: 30px 0; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; align-items: center; }
+    footer p { margin: 4px 0; font-size: .9rem; }
+    .whatsapp-float { position: fixed; right: 18px; bottom: 18px; z-index: 30; background: #16864a; color: white; padding: 13px 17px; border-radius: 999px; text-decoration: none; font-weight: 800; box-shadow: 0 8px 24px rgba(0,0,0,.22); }
+    @media (max-width: 820px) {
+      .nav { padding: 12px 0; align-items: flex-start; flex-direction: column; gap: 12px; }
+      nav { width: 100%; overflow-x: auto; padding-bottom: 5px; gap: 17px; }
+      nav a { white-space: nowrap; font-size: .86rem; }
+      .hero { padding: 52px 0 58px; }
+      .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .hero-grid { gap: 30px; }
+      .hero-logo { width: min(75vw, 300px); }
+      .trust-grid { grid-template-columns: 1fr; gap: 12px; }
+      section { padding: 56px 0; }
+      .cards { grid-template-columns: 1fr 1fr; }
+      .donate-box { grid-template-columns: 1fr; padding: 25px; }
+    }
+    @media (max-width: 520px) {
+      .container { width: min(100% - 28px, 1120px); }
+      .topbar-inner { font-size: .82rem; }
+      .brand img { width: 55px; height: 55px; }
+      .brand-text strong { font-size: .96rem; }
+      .hero p { font-size: 1rem; }
+      .hero-actions .button { width: 100%; }
+      .cards { grid-template-columns: 1fr; }
+      .card { padding: 22px; }
+      .quote { padding: 25px; }
+      .whatsapp-float { right: 12px; bottom: 12px; font-size: .9rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Educación, acompañamiento y esperanza para la comunidad</span>
+      <span>San Cayetano · El Agustino · Lima</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Asociación Bendición de Dios, inicio">
+        <img src="logo.png" alt="Logo de la Asociación Bendición de Dios">
+        <span class="brand-text"><strong>Asociación Bendición de Dios</strong><span>Solidaridad que abre oportunidades</span></span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <a href="#nosotros">Quiénes somos</a>
+        <a href="#programa">Nuestro programa</a>
+        <a href="#colaborar">Cómo colaborar</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Una oportunidad para aprender y crecer</span>
+          <h1>La educación puede abrir un futuro diferente.</h1>
+          <p>La Asociación Bendición de Dios impulsa iniciativas de apoyo a niños, niñas y adolescentes de familias con recursos limitados, mediante acompañamiento educativo y acciones solidarias.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#colaborar">Quiero colaborar <span aria-hidden="true">→</span></a>
+            <a class="button button-outline" href="#programa">Conocer el proyecto</a>
+          </div>
+        </div>
+        <div class="hero-logo-wrap">
+          <img class="hero-logo" src="logo.png" alt="Emblema de la Asociación Bendición de Dios">
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-strip">
+      <div class="container trust-grid">
+        <div class="trust-item">Apoyo educativo<span>Refuerzo y tutoría académica</span></div>
+        <div class="trust-item">Acompañamiento integral<span>Atención a necesidades educativas y socioemocionales</span></div>
+        <div class="trust-item">Solidaridad comunitaria<span>Colaboración y donaciones voluntarias</span></div>
+      </div>
+    </div>
+
+    <section id="nosotros">
+      <div class="container">
+        <div class="section-heading">
+          <span class="kicker">Quiénes somos</span>
+          <h2>Creemos en el potencial de cada niño y adolescente</h2>
+          <p>La asociación busca contribuir al bienestar de niños, adolescentes y familias en situación de vulnerabilidad en Lima y Callao, promoviendo oportunidades educativas y apoyo comunitario.</p>
+        </div>
+        <div class="about-grid">
+          <div>
+            <h3>¿Por qué es importante apoyar?</h3>
+            <p>Cuando un estudiante no cuenta con acompañamiento suficiente fuera de la escuela, puede enfrentar dificultades para realizar sus tareas, fortalecer sus aprendizajes y mantener la motivación. Un entorno seguro y solidario puede ayudarle a desarrollar sus capacidades.</p>
+            <p>La educación es una tarea compartida. Las familias, la comunidad, los voluntarios y las instituciones pueden aportar para construir más oportunidades.</p>
+            <div class="pill-list">
+              <span class="pill">Aprendizaje</span>
+              <span class="pill">Bienestar</span>
+              <span class="pill">Participación familiar</span>
+              <span class="pill">Solidaridad</span>
+            </div>
+          </div>
+          <div class="quote">
+            <p>“Cuando damos con amor, quizá entregamos un poco de pan, pero podemos estar devolviendo mucha esperanza”.</p>
+            <strong>Compartir también es construir oportunidades.</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="program" id="programa">
+      <div class="container">
+        <div class="section-heading">
+          <span class="kicker">Nuestro proyecto</span>
+          <h2>Casa de reforzamiento estudiantil “Saber y Creer”</h2>
+          <p>Una propuesta de apoyo complementario para acompañar el aprendizaje y el desarrollo integral de estudiantes. Los servicios descritos corresponden a los componentes planteados para el proyecto.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">📚</div>
+            <h3>Refuerzo académico</h3>
+            <p>Apoyo en tareas y nivelación en áreas como matemática, comprensión lectora, ciencias e idiomas, de acuerdo con las necesidades educativas.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🧑‍🏫</div>
+            <h3>Tutoría personalizada</h3>
+            <p>Acompañamiento educativo para reforzar hábitos de estudio, resolver dudas y dar seguimiento al progreso de cada estudiante.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">💻</div>
+            <h3>Materiales y tecnología</h3>
+            <p>Propuesta de acceso a materiales educativos, libros, computadoras y recursos que apoyen las actividades escolares.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🍎</div>
+            <h3>Alimentación</h3>
+            <p>El proyecto contempla apoyo alimentario o una merienda para contribuir al bienestar durante las actividades educativas.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">💙</div>
+            <h3>Acompañamiento psicosocial</h3>
+            <p>Se propone orientación socioemocional para estudiantes y familias, con atención especializada según los recursos disponibles.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🎨</div>
+            <h3>Desarrollo integral</h3>
+            <p>Propuesta de actividades recreativas, culturales y formativas que complementen el aprendizaje y fortalezcan la convivencia.</p>
+          </article>
+        </div>
+        <p class="muted" style="text-align:center;margin-top:24px;font-size:.92rem;">La implementación de las actividades dependerá de la disponibilidad de local, recursos, profesionales y colaboradores.</p>
+      </div>
+    </section>
+
+    <section id="colaborar" class="donate">
+      <div class="container">
+        <div class="donate-box">
+          <div>
+            <span class="kicker">Súmate a esta iniciativa</span>
+            <h2>Tu colaboración puede convertirse en una oportunidad.</h2>
+            <p class="muted">Puedes comunicarte con la asociación por WhatsApp para consultar cómo apoyar el proyecto o coordinar la donación de artículos en desuso en buen estado, como ropa, calzado, juguetes, libros, útiles, muebles o equipos tecnológicos.</p>
+            <p class="muted">Antes de entregar una donación, coordina por WhatsApp el tipo de artículo, su estado y la forma de entrega.</p>
+          </div>
+          <div>
+            <a class="button button-blue" href="https://wa.me/51993440618?text=Hola%2C%20quiero%20informaci%C3%B3n%20para%20colaborar%20con%20la%20Asociaci%C3%B3n%20Bendici%C3%B3n%20de%20Dios." target="_blank" rel="noopener noreferrer">Donar por WhatsApp ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="container">
+        <div class="section-heading">
+          <span class="kicker">Contacto</span>
+          <h2>Conversemos y coordinemos</h2>
+          <p>Escríbenos para consultar sobre el proyecto, voluntariado o donaciones.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="note-card">
+            <h3>Información de contacto</h3>
+            <div class="contact-item">
+              <span class="contact-symbol" aria-hidden="true">📱</span>
+              <div><strong>WhatsApp</strong><br><a href="https://wa.me/51993440618" target="_blank" rel="noopener noreferrer">993 440 618</a></div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-symbol" aria-hidden="true">📍</span>
+              <div><strong>Ubicación</strong><br>San Cayetano, El Agustino, Lima, Perú</div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-symbol" aria-hidden="true">🤝</span>
+              <div><strong>Donaciones</strong><br>Coordina previamente por WhatsApp.</div>
+            </div>
+          </div>
+          <div class="note-card">
+            <h3>¿Cómo puedes ayudar?</h3>
+            <p>Comparte la iniciativa, consulta por oportunidades de voluntariado o coordina una donación de artículos útiles para las actividades del proyecto.</p>
+            <p>También puedes ayudar difundiendo la importancia del acompañamiento escolar y de crear entornos seguros para que los estudiantes aprendan.</p>
+            <a class="button button-primary" href="https://wa.me/51993440618?text=Hola%2C%20quisiera%20conocer%20las%20formas%20de%20apoyar%20a%20la%20Asociaci%C3%B3n%20Bendici%C3%B3n%20de%20Dios." target="_blank" rel="noopener noreferrer">Escribir a la asociación</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <strong>Asociación Bendición de Dios</strong>
+        <p>Educación, solidaridad y esperanza.</p>
+      </div>
+      <p>© <span id="year"></span> Asociación Bendición de Dios. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/51993440618?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20Asociaci%C3%B3n%20Bendici%C3%B3n%20de%20Dios." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">WhatsApp</a>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
